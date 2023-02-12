@@ -24,7 +24,7 @@ while True:
      adio=r.listen(source)
      txt=r.recognize_google(adio)
      try:
-       openai.api_key = "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"
+       openai.api_key = "YOUR_PRIVATE_APIKEY_HERE!"
        response = openai.Completion.create(
           engine = "text-davinci-003",   #text-ada-001    text-davinci-003    
           prompt = txt,
